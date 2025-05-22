@@ -6,7 +6,7 @@ const server = http.createServer(app);
 // In your Node.js server file (server.js or app.js)
 const io = require('socket.io')(server, {
     cors: {
-        origin: "http://localhost:3000", // Your React app's exact origin
+        origin: "https://websoft-frontend.vercel.app/", // Your React app's exact origin
         methods: ["GET", "POST"],
         credentials: true
     },
